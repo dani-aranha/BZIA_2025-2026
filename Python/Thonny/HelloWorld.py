@@ -1,7 +1,7 @@
 #1st program
 
-
-print(f'Wow! I hear town is a great place to live!')
+# prompt
+print(f'Enter the name of the town you live:')
 town = input()
 
-print(f'Wow! I hear town is a great place to live!')
+print(f'Wow! I hear {town} is a great place to live!')
