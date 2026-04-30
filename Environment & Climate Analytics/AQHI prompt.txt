@@ -1,0 +1,140 @@
+
+📦 O que você espera ver como ENTREGÁVEL de AQHI
+Como Data Lead, você pode deixar explícito que espera 3 coisas, não mais que isso:
+✅ 1. Um dataset consolidado
+
+Fonte oficial (ECCC / MSC Datamart)
+Usando MONTHLY + BACKFILLED
+Período: a partir de Dez/2023
+Um arquivo final (ex.: fact_aqhi_monthly_atlantic.csv)
+
+✅ 2. Uma agregação clara
+Você pode propor, não impor, duas métricas:
+
+AQHI_Mean (monthly average)
+→ padrão geral / condição típica
+(opcional) AQHI_Max (monthly maximum)
+→ episódios de pior qualidade do ar
+
+📌 Isso é suficiente para responder a pergunta do professor.
+✅ 3. 1–2 gráficos explicativos
+Nada além disso:
+
+AQHI mensal ao longo do tempo
+AQHI por estação do ano
+(opcional) AQHI vs temperatura
+
+
+🛠️ Pipeline sugerido (o “como” levar ao projeto)
+Isso é o roteiro que você pode propor ao time, mesmo que outra pessoa codifique.
+🔹 Passo 1 — Download controlado
+
+Baixar os arquivos:
+YYYYMM_MONTHLY_AQHI_ATL_SiteObs_BACKFILLED.csv
+
+
+Apenas para os meses desejados (ex.: Dez/2023 → atual)
+Um pequeno script para:
+
+baixar mês a mês
+salvar em data/raw/aqhi/
+
+
+
+
+✔️ Mesmo sendo curto, vale sim fazer o script
+→ mostra método
+→ mantém padrão com precipitation
+→ garante reprodutibilidade
+
+
+🔹 Passo 2 — Consolidação
+
+Concatenar os arquivos mensais em um único dataframe
+Ainda em nível horário × estação
+
+Isso gera algo como:
+aqhi_raw_atlantic.csv
+
+
+🔹 Passo 3 — Agregação (parte conceitualmente mais importante)
+Temporal
+
+Dropar Hour (UTC)
+Agregar por Year‑Month
+
+Espacial
+
+Agregar todas as colunas de estações
+Criar métricas regionais:
+
+Sugestão clara (a que você já citou):
+
+AQHI_Mean = mean(all stations, over the month)
+AQHI_Max = max(all stations, over the month)
+
+📌 Aqui você transforma a “sopa de letras” em um dado analítico.
+
+🔹 Passo 4 — Dataset final (Fact_AQHI)
+Estrutura esperada:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CampoFunçãoYear‑MonthDim_CalendarRegionDim_Region (Atlantic)AQHI_MeanMétricaAQHI_Max (opcional)Métrica
+👉 Uma fact simples, limpa e defensável
+
+📊 Como isso aparece no final (dashboard / relatório)
+Você pode deixar claro que espera algo assim:
+Visual 1 — AQHI mensal
+
+Linha
+Mostra flutuação temporal
+Evidencia padrões sazonais
+
+Visual 2 — AQHI por estação do ano
+
+Barras ou boxplot
+Inverno × verão
+
+Texto curto de interpretação
+Algo do tipo:
+
+“Higher AQHI values are observed during colder months, consistent with reduced atmospheric dispersion and increased emissions associated with heating and transportation. AQHI is used here as a contextual indicator rather than a direct measure of industrial output.”
+
+📌 Isso responde a pergunta sem exagerar.
+
+🗂️ Limitação documentada (importante!)
+Como Data Lead, é ótimo você exigir que isso esteja escrito:
+
+A série começa em Dez/2023
+Anos anteriores exigiriam:
+
+reconstrução do AQHI
+uso de outras séries (NAPS)
+
+
+Fora do escopo
+
+Isso protege o projeto.

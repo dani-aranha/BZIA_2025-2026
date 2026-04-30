@@ -1,0 +1,145 @@
+✅ Resumo do Avanço do Projeto (até agora)
+🧭 Direção e Escopo
+
+O core analítico do projeto está bem definido:
+
+Fact_Temperature
+Fact_Precipitation
+
+
+Datasets secundários (contextuais) alinhados:
+
+AQHI (Air Quality Health Index) → contextual, regional, série curta (desde dez/2023)
+GHG (Greenhouse Gas emissions) → anual, por região/província
+
+
+Decisão clara e documentável:
+
+AQHI e GHG não competem com o core climático, apenas suportam narrativa e perguntas secundárias
+
+
+
+
+🧱 Modelagem (Star Schema)
+Você avançou bastante aqui — talvez o maior ganho do dia 👏
+✅ Dimensões criadas no Power BI (via DAX)
+
+Dim_Calendar
+
+Datas mensais
+Year, Month, YearMonth
+✅ Inclui Season, essencial para AQHI
+
+
+Dim_Region
+
+Atlantic Canada
+NS, NB, PE, NL
+
+
+Dim_Station
+
+Climate ID
+Metadados (nome, latitude, longitude, province, first/last year)
+
+
+
+✅ Decisões corretas de modelagem
+
+❌ Nenhuma dimensão ligada diretamente a outra
+❌ Nada de many-to-many desnecessário
+✅ Todas as dimensões ligadas somente às fact tables
+✅ Modelo star schema limpo, fácil de explicar ao professor
+
+
+🌧️ Fact_Precipitation — progresso técnico
+
+Pipeline em Python ainda rodando (download + concatenação massiva dos CSVs do ECCC)
+Enquanto isso, você criou:
+
+✅ Fact_Precipitation_Sample diretamente no Power BI (DAX)
+Usando ROW() + UNION() (solução correta para contornar limitações do DATATABLE)
+
+
+Essa fact sample:
+
+Permitiu validar todos os relacionamentos
+Atendeu exatamente ao pedido da Yashaswi: “working model with 2–3 dims and one aggregation”
+
+
+
+
+🔗 Relacionamentos validados no Power BI
+
+Fact_Precipitation_Sample → Dim_Calendar (Date)
+Fact_Precipitation_Sample → Dim_Station (ClimateID)
+Fact_Precipitation_Sample → Dim_Region (Province / RegionName)
+Todos com:
+
+Many → One
+Single-direction filtering
+
+
+
+✅ Modelo estável, sem ambiguidade, pronto para expandir.
+
+🌫️ AQHI — entendimento e governança
+
+Fonte correta identificada: ECCC / MSC Datamart
+✅ Uso de MONTHLY + BACKFILLED
+✅ Conclusão importante:
+
+Série disponível apenas a partir de dezembro/2023
+Períodos anteriores exigiriam reconstrução (fora de escopo)
+
+
+✅ Estratégia acordada:
+
+Agregação hourly → monthly
+Agregação station → regional (Atlantic)
+
+
+Você:
+
+Levantou limitações
+Comunicou ao grupo de forma suave e colaborativa
+Reforçou a importância da documentação centralizada (Tracy)
+
+
+
+
+🤝 Alinhamento com o grupo
+
+Pedido da Yashaswi totalmente atendido
+Comunicação clara sobre:
+
+Limitações dos dados
+Escopo realista
+Próximos passos
+
+
+Você atuou claramente como Data Lead:
+
+Definiu critérios
+Garantiu coerência
+Não atropelou implementações alheias
+
+
+
+
+🛠️ Próximos Passos Naturais (quando retomar)
+
+✅ Finalizar script Python de precipitação
+🔄 Substituir Fact_Precipitation_Sample pela fact real
+🌫️ Integrar Fact_AQHI (quando pronto)
+🌱 Integrar Fact_GHG
+📈 Voltar ao Python para:
+
+análises
+tendências
+modelos (regressão, forecasting)
+
+
+🔁 Exportar outputs de modelos como CSV → Power BI
+
+Nada do que foi feito hoje gera retrabalho.

@@ -1,0 +1,96 @@
+
+✅ Projeto – Summary of Requirements and Current Progress
+Project Objective (as defined in the Project Charter)
+The objective of this group project is to build a Power BI dashboard to understand how inflation and interest rate changes affect Canadian household consumption, income, and savings, with special attention to food spending, across:
+
+Time
+Regions (provinces)
+Income and consumption categories
+
+The final output is a story‑driven presentation, limited to approximately 10 minutes, with each group member presenting insights from their assigned perspective.
+
+Project Requirements (as communicated by the group lead)
+
+Clean and prepare the provided datasets.
+Build approximately 5 key visuals for the final dashboard.
+Each group member:
+
+Works on one specific analytical angle
+Creates one report page (tab) in Power BI
+Shares their work for final compilation into a single .pbix file.
+
+
+Focus on clear storytelling, not deep modeling or forecasting.
+Avoid overlapping analysis between group members.
+
+
+Division of Work (Agreed Direction)
+
+Overview of the data: assigned to group lead
+Inflation trends: assigned to another group member
+Interest rates vs savings/spending: assigned to another group member
+Food consumption analysis (my contribution):
+
+Focus on household food spending behavior
+Avoid duplicating inflation or interest‑rate analysis
+Support the overall narrative on cost‑of‑living pressure
+
+
+
+
+My Contribution – Current Status
+I completed my assigned analysis using Power BI Desktop (PBIX file), following the agreed workflow.
+Scope of my analysis
+
+Focus on food as an essential and non‑discretionary component of household consumption
+Align explicitly with the project scope: consumption patterns, time, and regional differences
+
+Visuals delivered
+
+Food Share of Total Household Consumption (Over Time)
+
+Shows how food consistently accounts for ~10% of total household consumption
+Highlights the fixed and stable nature of essential spending
+
+
+Food Share of Total Consumption by Province (Latest Year)
+
+Shows regional variation in the relative burden of food spending
+Demonstrates that cost pressure is not uniform across provinces
+
+
+
+Technical details
+
+Created a simple DAX measure:
+
+Food Share of Total Consumption
+
+
+No changes were made to:
+
+the data model
+relationships
+table structures
+
+
+The page is self‑contained and can be copied directly into the final report.
+
+
+Key Insight Delivered
+
+Food spending is a stable and unavoidable part of household budgets in Canada.
+While its share of total consumption remains relatively constant over time, the level of pressure varies across provinces, helping explain why inflation and interest‑rate changes impact households differently depending on regional context.
+
+
+Collaboration & File Sharing Context
+
+I do not have a Power BI Pro license, so online editing in Power BI Service is not available.
+As originally requested, my contribution was completed in a local .pbix file and is ready to be incorporated into the final dashboard.
+
+
+Current Status
+✅ Assigned analysis completed
+✅ Visuals finalized
+✅ DAX measure implemented
+✅ Ready for integration into the final group report

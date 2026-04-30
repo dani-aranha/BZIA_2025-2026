@@ -1,0 +1,107 @@
+🧭 Project Status – Where We Are & Next Steps
+✅ What the project requires (per course & instructor guidance)
+
+GitHub repository with clear structure and version control
+Project Charter aligned with course objectives
+Clear business problem and stakeholder context
+Use of the BI stack:
+
+Data acquisition and cleaning (Python / SQL)
+Exploratory Data Analysis (EDA)
+Basic modeling / forecasting (proof of concept)
+Power BI dashboard with KPIs, trends, and storytelling
+
+
+Documentation of:
+
+Data sources
+Data quality and assumptions
+Methodology and limitations
+
+
+Final deliverables:
+
+Power BI dashboard
+GitHub repo with code + docs
+Final report and presentation
+
+
+
+
+✅ What has already been done
+
+GitHub repository created and public ✅
+Clean and clear folder structure already in place:
+
+data/raw and data/clean
+scripts/python and scripts/sql
+reports/
+
+
+.gitignore configured ✅
+README created with:
+
+Project title
+Short description
+Team members
+Folder structure ✅
+
+
+Project Charter uploaded to reports/Capstone Charter.pdf ✅
+Team discussion completed on:
+
+Project scope and topic areas
+End‑to‑end ownership by topic
+Initial breakdown of analytical themes ✅
+
+
+
+Overall, the repo and project setup are aligned with Week 1 expectations.
+
+🔄 How the project is currently framed
+
+
+All four topic areas are in scope:
+
+Temperature
+Precipitation & extreme weather
+GHG emissions
+Air Quality Index (AQI)
+
+
+
+There is already a natural structure where:
+
+Temperature and precipitation form the analytical backbone (deeper analysis, trends, anomalies, forecast example)
+GHG and AQI act as complementary, contextual layers with more descriptive and visual focus
+
+
+
+This framing is aligned with the Project Charter and realistic for the 5‑week timeline.
+
+📌 What we need to do next (short‑term)
+
+Begin documenting data sources clearly and centrally
+Start data acquisition and initial inspection
+Align on common data rules (dates, baselines, aggregations) to support a consistent BI model
+Gradually build documentation alongside the technical work (not at the end)
+
+
+📝 Important note – Documentation starts now
+A key thing we should not forget:
+
+From this point on, we should start registering and documenting what we already have and the decisions we make.
+
+This includes:
+
+Where datasets come from (sources, links, access dates)
+Assumptions and limitations we uncover
+Early data quality issues
+Scope or execution decisions
+
+Starting documentation early will:
+
+Make QA easier later
+Reduce rework
+Simplify the final report
+Clearly show our process and contributions

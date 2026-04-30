@@ -1,0 +1,134 @@
+📄 UPDATED PROJECT PROMPT — STATUS & SCOPE (APRIL 10th UPDATE)
+📌 Academic Context
+Course: DBAS2101 / DBAS3182 – Data Reporting (B)
+Tool: Power BI
+Project Theme: Evaluation of Open Data Catalog Health and Usage
+Data Source: Halifax Regional Municipality (HRM) – ArcGIS Hub Open Data
+This project is structured and delivered in two distinct presentations, each with a clearly defined scope and evaluation focus.
+
+✅ PART 1 — DELIVERED & EVALUATED
+Focus: Data Model, Structure, and Technical Validation
+🎯 What Was Requested (Part 1)
+Demonstrate the ability to:
+
+Design and implement a proper star schema
+Clearly distinguish fact vs. dimension tables
+Use correct relationships, keys, and hierarchies
+Apply explicit DAX measures only
+Demonstrate slicing, drill-down, and interactivity
+Maintain clean model organization and field visibility
+
+
+✅ What Was Delivered (Part 1)
+
+Star Schema implemented and validated
+
+Fact_Usage (usage events)
+Dim_Dataset
+Dim_AgeBand
+Dim_Cluster
+
+
+Artificial DatasetKey used consistently
+One‑to‑many relationships correctly defined
+Hierarchies formalized and demonstrated in visuals
+All report visuals use explicit DAX measures only
+No implicit aggregations (Σ) in any report visual
+Slicers, drill‑down, and tooltips implemented intentionally
+
+
+🏆 Result (Part 1)
+
+30 / 30 — Level 5
+Full marks across:
+
+Star schema design
+Key management & visibility
+Hierarchies
+Measures & calculations
+Report interactivity
+
+
+Confirms technical correctness, clarity, and maturity of the model
+
+
+⏳ PART 2 — UPCOMING PRESENTATION
+Focus: Business Logic, Analytical Reasoning, and Strategic Insight
+
+🎯 What Is Required (Part 2)
+Present and explain:
+
+Business logic behind metric definition
+Analytical framing of dataset usage
+Rationale for clustering logic
+Interpretation of results for governance and decision‑making
+Clear separation between:
+
+Descriptive analytics
+Analytical insight
+Strategic recommendation
+
+
+
+Maximum presentation time: 10 minutes
+
+✅ What Is Already Completed (and Will Be Presented)
+
+Fixed reference date (Oct 19, 2025) for analytical stability
+Dataset age calculation and age banding
+Separation of:
+
+Historical impact → Total Usage
+Current activity intensity → Average Annual Usage
+
+
+Bias mitigation for older datasets
+Governance‑oriented clustering:
+
+Power Active
+Fresh Light
+Legacy Heavy (not interpreted as obsolete)
+Dormant
+Very Old Low Activity
+
+
+Report pages structured by intent:
+
+Technical validation
+Executive overview
+Analytical usage & impact
+Strategic recommendations
+
+
+Drill‑down and tooltips used to add depth without narrative leakage
+
+
+🔧 Deferred (Post‑Presentation by Design)
+The following items are intentionally postponed and do not affect analytical validity:
+
+Final hiding of remaining technical fields in Model view
+Optional move of measures into a dedicated Measures table
+Final audit to remove any legacy calculated columns
+
+These are model hygiene improvements, not logic corrections.
+
+📄 Authoritative Artifact
+The current presentation state of the project is represented by:
+OpenDataMetrics.pdf
+This file reflects:
+
+Validated star schema usage
+Dataset‑level analytical metrics
+Correct hierarchies, slicers, and visuals
+Exclusive use of explicit DAX measures
+
+The PDF represents the official assessment version of the project for Part 2.
+
+🧠 Scope Clarification
+
+Part 1 evaluates technical modeling and Power BI proficiency ✅
+Part 2 evaluates business logic, analytics, and strategic reasoning ⏳
+No structural rework is required; only communication and explanation
+
+Future steps is >> Converter isso num case de portfólio (GitHub / Notion / PDF executivo)
+
