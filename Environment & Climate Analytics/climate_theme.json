@@ -1,0 +1,21 @@
+{
+  "name": "Climate Analytics - Clear Separation",
+
+  "dataColors": [
+    "#2C7BB6",  
+    "#ABD9E9",  
+    "#2E7D32",  
+
+    "#90A4AE",  
+    "#546E7A",  
+    "#6A1B9A",  
+
+    "#FFD54F",  
+    "#FB8C00",  
+    "#E53935"   
+  ],
+
+  "background": "#F4F7F6",
+  "foreground": "#1B263B",
+  "tableAccent": "#2C7BB6"
+}
