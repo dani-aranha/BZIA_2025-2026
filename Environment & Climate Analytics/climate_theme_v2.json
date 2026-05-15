@@ -1,0 +1,54 @@
+{
+  "name": "Climate Analytics - Unified Theme",
+  "dataColors": [
+    "#2C7BB6",
+    "#ABD9E9",
+    "#90A4AE",
+    "#546E7A",
+    "#FB8C00",
+    "#E53935",
+    "#FFD54F",
+    "#2E7D32",
+    "#6A1B9A"
+  ],
+  "background": "#F4F7F6",
+  "foreground": "#1B263B",
+  "tableAccent": "#2C7BB6",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "title": [
+          {
+            "show": true,
+            "fontColor": { "solid": { "color": "#1B263B" } },
+            "fontSize": 18,
+            "fontFamily": "Segoe UI Semibold"
+          }
+        ],
+        "background": [
+          {
+            "show": true,
+            "color": { "solid": { "color": "#FFFFFF" } },
+            "transparency": 0
+          }
+        ]
+      }
+    },
+    "card": {
+      "*": {
+        "labels": [
+          {
+            "color": { "solid": { "color": "#1B263B" } },
+            "fontSize": 26
+          }
+        ],
+        "categoryLabels": [
+          {
+            "color": { "solid": { "color": "#546E7A" } },
+            "fontSize": 12
+          }
+        ]
+      }
+    }
+  }
+}

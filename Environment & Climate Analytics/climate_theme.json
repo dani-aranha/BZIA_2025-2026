@@ -1,21 +1,63 @@
 {
-  "name": "Climate Analytics - Clear Separation",
-
-  "dataColors": [
-    "#2C7BB6",  
-    "#ABD9E9",  
-    "#2E7D32",  
-
-    "#90A4AE",  
-    "#546E7A",  
-    "#6A1B9A",  
-
-    "#FFD54F",  
-    "#FB8C00",  
-    "#E53935"   
-  ],
+  "name": "Climate Analytics - Unified Theme",
 
   "background": "#F4F7F6",
   "foreground": "#1B263B",
-  "tableAccent": "#2C7BB6"
+
+  "dataColors": [
+    "#2C7BB6",   // Precipitation (main blue)
+    "#ABD9E9",   // Light precipitation
+    "#90A4AE",   // Wind (neutral grey)
+    "#546E7A",   // Dark wind
+    "#FB8C00",   // Temperature (orange)
+    "#E53935",   // High temperature (red)
+    "#FFD54F",   // AQI / GHG (yellow)
+    "#2E7D32",   // Environmental balance (green)
+    "#6A1B9A"    // optional accent (secondary)
+  ],
+
+  "tableAccent": "#2C7BB6",
+
+  "visualStyles": {
+    "*": {
+      "*": {
+        "title": [
+          {
+            "fontSize": 18,
+            "fontFamily": "Segoe UI Semibold",
+            "color": "#1B263B"
+          }
+        ],
+        "labels": [
+          {
+            "fontSize": 11,
+            "color": "#1B263B"
+          }
+        ],
+        "background": [
+          {
+            "color": "#FFFFFF",
+            "transparency": 0
+          }
+        ]
+      }
+    },
+
+    "card": {
+      "*": {
+        "labels": [
+          {
+            "fontSize": 26,
+            "color": "#1B263B"
+          }
+        ],
+        "categoryLabels": [
+          {
+            "fontSize": 12,
+            "color": "#546E7A"
+          }
+        ]
+      }
+    }
+  }
 }
